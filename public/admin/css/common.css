@@ -1,5 +1,20 @@
 html,body {
   height: 100%;
+ 
+}
+body {
+   padding-left:180px;
+}
+  body.active {
+  padding-left: 0;
+}
+* {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+ul {
+  list-style:none;
 }
 a {
   text-decoration:none;
@@ -14,4 +29,85 @@ a {
 .panel-title {
   font-size:18px;
   padding:10px 0;
+}
+a:hover,
+a:active,
+a:link,
+a:visited {
+  text-decoration:none;
+}
+.lt_aside {
+  height: 100%;
+  width: 180px;
+  background-color: #222d32;
+  position:absolute;
+  left:0;
+  top:0;
+  transition: all 1s;
+
+}
+.lt_aside.active {
+  left: -180px;
+}
+.branch a {
+  display:block;
+  font-size:24px;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+  color:#fff;
+  background-color:rgb(54, 127, 169);
+
+}
+.user {
+  text-align:center;
+  margin-top:30px;
+}
+.user img {
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+}
+.user p {
+  margin-top:10px;
+  color:#fff;
+  font-size:18px;
+}
+.lt_aside .nav a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 50px;
+  border-left: 3px solid transparent;
+}
+
+.lt_aside .second a {
+  padding-left: 70px;
+}
+
+.lt_aside .nav a.active {
+  background-color: #1d1f21;
+  border-left: 3px solid #337ab7;
+  box-sizing: border-box;
+}
+.lt_main {
+  height: 100%;
+  width: 100%;
+}
+.lt_header{
+  height: 50px;
+  line-height:50px;
+  background:  #3c8dbc;
+  padding:0 20px;
+  margin-bottom:15px;
+}
+.lt_header a {
+  color:#fff;
+  font-size:18px;
+}
+.charts_left,
+.charts_right {
+  width: 45%;
+  height: 400px;
 }
