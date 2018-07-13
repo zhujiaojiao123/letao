@@ -1,4 +1,4 @@
-// 基于准备好的dom 准备echarts 实例
+// 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.querySelector(".charts_left"));
 // 指定图表的配置项和数据
 var option = {

@@ -1,78 +1,81 @@
+/* 这里面写了所有后端的样式 */
+
+.body_bg {
+  background-color: #222d32;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
+
 html,body {
   height: 100%;
- 
 }
+
 body {
-   padding-left:180px;
+  padding-left: 180px;
+  transition: all 1s;
 }
-  body.active {
+
+body.active {
   padding-left: 0;
 }
-* {
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-}
-ul {
-  list-style:none;
-}
-a {
-  text-decoration:none;
-}
-.body_bg {
-  background-color:#222d32;
-}
-.mg_150 {
-  margin-top:150px;
- 
-}
-.panel-title {
-  font-size:18px;
-  padding:10px 0;
-}
-a:hover,
-a:active,
-a:link,
-a:visited {
-  text-decoration:none;
-}
-.lt_aside {
-  height: 100%;
-  width: 180px;
-  background-color: #222d32;
-  position:absolute;
-  left:0;
-  top:0;
-  transition: all 1s;
 
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+
 .lt_aside.active {
   left: -180px;
 }
-.branch a {
-  display:block;
-  font-size:24px;
-  height:50px;
-  line-height:50px;
-  text-align:center;
-  color:#fff;
-  background-color:rgb(54, 127, 169);
 
+.lt_aside .brand a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #367fa9;
+  color: #fff;
+  font-size: 24px;
 }
-.user {
-  text-align:center;
-  margin-top:30px;
-}
-.user img {
+
+.lt_aside .user img {
+  display: block;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
-  border-radius:50%;
+  margin: 30px auto 0;
 }
-.user p {
-  margin-top:10px;
-  color:#fff;
-  font-size:18px;
+
+.lt_aside .user p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
 }
+
 .lt_aside .nav a {
   display: block;
   height: 40px;
@@ -91,21 +94,27 @@ a:visited {
   border-left: 3px solid #337ab7;
   box-sizing: border-box;
 }
+
+
 .lt_main {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
-.lt_header{
+
+.lt_header {
   height: 50px;
-  line-height:50px;
-  background:  #3c8dbc;
-  padding:0 20px;
-  margin-bottom:15px;
+  line-height: 50px;
+  background-color: #3c8dbc;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
+
 .lt_header a {
-  color:#fff;
-  font-size:18px;
+  color: #fff;
+  font-size: 18px;
 }
+
+
 .charts_left,
 .charts_right {
   width: 45%;
