@@ -16,7 +16,11 @@ $(function () {
     // 先获取id ,isDelete;因为接口文档是必须要传的
     id=$(this).parent().data("id");
     isDelete=$(this).hasClass("btn-success")?"1":"0";
-    $(".btn_confirm").on("click",function(){
+   
+   
+  })
+  // 写在外面，防止多次触发ajax请求
+   $(".btn_confirm").on("click",function(){
          $.ajax({
       type:"post",
       url:"/user/updateUser",
@@ -36,8 +40,6 @@ $(function () {
       }
     })
     })
-   
-  })
 
   // 3.发送ajax请求
   function render() {
